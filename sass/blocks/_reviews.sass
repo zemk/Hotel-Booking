@@ -1,0 +1,102 @@
+.reviews
+  &__title
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: #fff
+      border-radius: 8px
+      padding: 0 62px 30px
+      margin: 45px auto 0
+      width: 730px
+      position: relative
+      &::before
+        content: ' '
+        position: absolute
+        background-image: url(../img/quote-l.svg)
+        background-repeat: no-repeat
+        width: 70px
+        left: 62px
+        top: 13px
+        height: 47px
+      &::after
+
+        content: ' '
+        position: absolute
+        background-image: url(../img/quote-r.svg)
+        background-repeat: no-repeat
+        width: 70px
+        right: 62px
+        top: 118px
+        height: 47px
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-size: 28px
+      width: 30px
+      height: 30px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 100
+      &--prev
+        background-image: url(../img/reviews-left.svg)
+        left: 0
+      &--next
+        background-image: url(../img/reviews-right.svg)
+        right: 0
+    &-profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 30px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      margin-bottom: 10px
+      font-family: Mulish
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: #EC1F46
+
+    &__date
+      margin-bottom: 4px
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+
+      color: #000000
+    &__rating
+      display: flex
+      align-items: center
+    &__text
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: #333333
+      max-width: 537px
+      margin: auto
