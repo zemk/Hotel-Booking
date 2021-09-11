@@ -169,7 +169,7 @@
                   class="call-center__num"> 12100</span></a>
             </div>
             <!-- /.call-center__text -->
-            <button class="button call-center__button">View Other Options</button>
+            <button data-toggle='modal' class="button call-center__button">View Other Options</button>
           </div>
           <!-- /.booking -->
           <div class="map">
@@ -467,7 +467,7 @@
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
             <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea class="footer__message"   placeholder="Message" cols="30" rows="10"></textarea>
+            <textarea class="footer__message message"   placeholder="Message" cols="30" rows="10"></textarea>
             <button class="button footer__button ">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -478,6 +478,32 @@
     </div>
     <!-- /.container -->
   </footer>
+  <div class="modal">
+    <div class="modal__overlay">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="close">
+      </a>
+      <div class="modal__dialog">
+        <div class="modal__contact-form">
+          <h3 class="modal__title footer__title--mb-3">Booking</h3>
+          <form action="#" class="modal__form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*">
+            <input type="text" class="input modal__input" placeholder="Phone Number*">
+            <input type="text" class="input modal__input" placeholder="Email**">
+            <textarea class="modal__message message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button class="button modal__button ">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.footer__contact-form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal__overlay -->
+    
+  </div>
+  <!-- /.modal -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
