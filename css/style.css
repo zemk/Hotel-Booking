@@ -1317,6 +1317,7 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-top: 23px;
+  margin-bottom: 20px;
 }
 
 .footer__button {
